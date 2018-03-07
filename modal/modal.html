@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="static/css/modal.css" >
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title></title> -->
+  </head>
+  <body>
+    <container>
+
+<div class="btn-group">
+  <a class="btn btn-red btn-ripple" data-toggle="modal" data-target="#panel-modal2">Add Recipe</a>
+</div><!--.btn-group-->
+
+
+<div class="modal modal-nutrition fade full-height from-right" id="panel-modal2" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="modal-title">I want to add my recipe!</h4>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <div class="row margin-top-30">
+                    <div class="col-md-3">Category:</div>
+                    <div class="col-md-9">
+                        <select class="selectpicker" data-width="100%">
+                            <option>- Select -</option>
+                            <option>Dishes</option>
+                            <option>Desserts</option>
+                            <option>Snacks</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row margin-top-30">
+                    <div class="col-md-3">Title:</div>
+                    <div class="col-md-9">
+                        <div class="control-group">
+                            <div class="controls">
+                                <div class="input-group">
+                                    <div class="inputer">
+                                        <div class="input-wrapper">
+                                            <input type="text" style="width: 200px"  />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-top-30">
+                    <div class="col-md-3">Recipe:</div>
+                    <div class="col-md-9">
+                        <div class="control-group">
+                            <div class="controls">
+                                <div class="input-group">
+                                    <div class="inputer">
+                                        <div class="input-wrapper">
+                                            <input type="text" style="width: 200px"  />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-top-30">
+                    <div class="col-md-3">Image:</div>
+                    <div class="col-md-9">
+                        <div class="control-group">
+                            <div class="controls">
+                                <div class="input-group">
+                                    <div class="inputer">
+                                        <div class="input-wrapper">
+                                            <input type="text" style="width: 200px"  />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                </div><!--.col-md-12-->
+            </div><!--.row-->
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-flat-secondary" data-dismiss="modal">Nevermind, I don't want to share my recipe.</button>
+            <button type="button" class="btn btn-flat-primary" data-dismiss="modal">Add it, please!</button>
+        </div>
+    </div>
+</div>
+
+
+  </body>
+</html>
