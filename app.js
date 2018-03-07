@@ -1,6 +1,12 @@
-const http = require ("http");
+var express = require('express');
+var bodyParser = require('body-parser');
+var path = require('path');
+var app = express();
 
-const hostname = '127.0.0.1';
-const port = 3000;
+app.get('/', function(req, res){
+  res.send('Hello World');
+})
 
-console.log('hello world')
+app.listen(3000, function(){
+  console.log('Server Started on Port 3000...');
+})
