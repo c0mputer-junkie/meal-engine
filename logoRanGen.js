@@ -6,4 +6,5 @@ function displayImage(){
     console.log(imagesArray.length);
     console.log(num);
     document.getElementById('test').innerHTML = imagesArray[num];
+
 }
