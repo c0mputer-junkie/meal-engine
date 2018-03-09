@@ -34,6 +34,8 @@ app.use(function(req, res, next){
 // Express Validator Middleware
 app.use(expressValidator());﻿
 
+
+
 app.get('/', function(req, res){
   db.users.find(function(err, users){
     res.render('index', {
