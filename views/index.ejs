@@ -25,27 +25,28 @@
         <div class="row">
           <div class="col-md-9">
             <h1>What should you eat today?</h1>
-              <div id="test"> </div>
+              <div id="test"><p>skdjkfjsd</p></div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- add to its own button class  -->
+
     <div class="Recipe-Image-Button-Wrapper">
       <span name="imageForm">
 
-        <a class="btn btn-lg btn-ripple " type="button">
-        <a src="https://emojipedia-us.s3.amazonaws.com/thumbs/160/facebook/65/fork-and-knife_1f374.png" width= "50" value="Display Random Image" ></a>  </a>
-              <!-- <input type="image" src="https://emojipedia-us.s3.amazonaws.com/thumbs/160/facebook/65/fork-and-knife_1f374.png" name="canvas" onClick="displayImage()" width= "50" value="Display Random Image"> -->
-            </span>
+        <!-- <a class="btn btn-lg btn-ripple " type="button"> -->
+        <img src="https://emojipedia-us.s3.amazonaws.com/thumbs/160/facebook/65/fork-and-knife_1f374.png" onclick = "displayImage()" width= "50" value="Display Random Image" > </img>
+      <!-- </a> -->
+              <!-- <input type="image" src="https://emojipedia-us.s3.amazonaws.com/thumbs/160/facebook/65/fork-and-knife_1f374.png" name="canvas" onClick="displayImage()" width= "50" value="Display Random Image">
+            </span> -->
 
       <span class="imageForm-align-left" aria-hidden="true"></span>
 
     </div>
 
 
-  
 
       <h1>Add Recipe</h1>
 
@@ -66,7 +67,7 @@
           <br><br>
           <input type="submit" value="Submit">
       </form>
-      
+
       <h1><%= title %></h1>
       <ul>
       <% users.forEach(function(user){ %>
