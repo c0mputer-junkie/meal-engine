@@ -49,32 +49,32 @@ app.use(expressValidator());﻿
 app.get('/', function(req, res){
   db.users.find(function(err, users){
     res.render('index', {
-      title: 'Customers',
+      title: 'Recipes',
       users: users
     });
   })
 });
 
 app.post('/users/add', function(req, res){
-  req.checkBody('first_name', 'First Name is Required').notEmpty();
-  req.checkBody('last_name', 'Last Name is Required').notEmpty();
-  req.checkBody('email', 'Email Name is Required').notEmpty();
+  req.checkBody('recipe_name', 'Recipe Name is Required').notEmpty();
+  req.checkBody('link_name', 'Link is Required').notEmpty();
+  // req.checkBody('picture_link', 'Picture Link is Required').notEmpty();
 
   var errors = req.validationErrors();
 
     if(errors){
       db.users.find(function(err, users){
         res.render('index', {
-          title: 'Customers',
+          title: 'Recipes',
           errors: errors,
           users: users
         });
       })
     } else {
         var newUser = {
-          first_name: req.body.first_name,
-          last_name: req.body.last_name,
-          email: req.body.email,
+          recipe_name: req.body.recipe_name,
+          link_name: req.body.link_name,
+
         }
 
           db.users.insert(newUser, function(err, result){

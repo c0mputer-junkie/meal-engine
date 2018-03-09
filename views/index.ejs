@@ -145,22 +145,20 @@
         <% }) %>
       </ul>
       <% } %>
+
       <form method="POST" action="/users/add">
-          <label>First Name</label><br>
-          <input type='text' name='first_name'>
+          <label>Recipe Name</label><br>
+          <input type='text' name='recipe_name'>
           <br>
-          <label>Last Name</label><br>
-          <input type='text' name='last_name'>
-          <br>
-          <label>Email</label><br>
-          <input type='text' name='email'>
+          <label>Link</label><br>
+          <input type='text' name='link_name'>
           <br><br>
           <input type="submit" value="Submit">
       </form>
       <h1><%= title %></h1>
       <ul>
       <% users.forEach(function(user){ %>
-        <li><%= user.first_name %> <%= user.last_name %> - <a href="#" class="deleteUser" data-id=<%=user._id%>>Delete</a></li>
+        <li><%= user.recipe_name %>  - <a href=" <%= user.link_name %> " class="deleteUser" data-id=<%=user._id%>>Go to Recipe</a></li>
       <% }) %>
       </ul>
 
