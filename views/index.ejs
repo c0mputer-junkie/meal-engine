@@ -1,6 +1,9 @@
 <% include partials/header %>
 <body>
-  <div>
+
+<!-- Nav Bar -->
+  <div class="container">
+
     <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -18,37 +21,23 @@
               </ul>
           </div>
       </nav>
-  </div>
 
-    <div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-9">
-            <h1>What should you eat today?</h1>
-              <div id="test"> </div>
-          </div>
-        </div>
+    <div class="row topBox">
+      <div class="col-xs-6 col-md-4">
+
+      <!-- add to its own button class  -->
+      <input type="image" src="https://emojipedia-us.s3.amazonaws.com/thumbs/160/facebook/65/fork-and-knife_1f374.png" name="canvas" onClick="displayImage()" width= "50" value="Display Random Image"></input>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-8">
+        <h1>What should you eat today?</h1>
+          <div id="test"> </div>
       </div>
     </div>
 
-    <!-- add to its own button class  -->
-    <div class="Recipe-Image-Button-Wrapper">
-      <span name="imageForm">
-
-        <a class="btn btn-lg btn-ripple " type="button">
-        <a src="https://emojipedia-us.s3.amazonaws.com/thumbs/160/facebook/65/fork-and-knife_1f374.png" width= "50" value="Display Random Image" ></a>  </a>
-              <!-- <input type="image" src="https://emojipedia-us.s3.amazonaws.com/thumbs/160/facebook/65/fork-and-knife_1f374.png" name="canvas" onClick="displayImage()" width= "50" value="Display Random Image"> -->
-            </span>
-
-      <span class="imageForm-align-left" aria-hidden="true"></span>
-
-    </div>
-
-
-  
-
+  <div class="row bottomBox">
+      <div class="col-xs-12 col-md-6 col-lg-6">
       <h1>Add Recipe</h1>
-
       <% if(errors){  %>
       <ul>
         <% errors.forEach(function(error){ %>
@@ -56,7 +45,6 @@
         <% }) %>
       </ul>
       <% } %>
-
       <form method="POST" action="/users/add">
           <label>Recipe Name</label><br>
           <input type='text' name='recipe_name'>
@@ -66,12 +54,15 @@
           <br><br>
           <input type="submit" value="Submit">
       </form>
-      
+    </div>
+    <div class="col-xs-12 col-md-6 col-lg-6">
       <h1><%= title %></h1>
       <ul>
       <% users.forEach(function(user){ %>
         <li><%= user.recipe_name %>  - <a href=" <%= user.link_name %> " class="deleteUser" data-id=<%=user._id%>>Go to Recipe</a></li>
       <% }) %>
       </ul>
-
+    </div>
+  </div>
+  </div>
 <% include partials/footer %>
