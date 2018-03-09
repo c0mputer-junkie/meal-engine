@@ -1,5 +1,6 @@
 <% include partials/header %>
       <h1>Add Recipe</h1>
+
       <% if(errors){  %>
       <ul>
         <% errors.forEach(function(error){ %>
@@ -17,6 +18,7 @@
           <br><br>
           <input type="submit" value="Submit">
       </form>
+      
       <h1><%= title %></h1>
       <ul>
       <% users.forEach(function(user){ %>
