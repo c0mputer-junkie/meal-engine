@@ -6,7 +6,17 @@ var mongojs = require('mongojs')
 var db = mongojs('meal-engine', ['users']);
 var ObjectId = mongojs.ObjectId;
 var app = express();
+//
+// var path = __dirname + ‘./views/’;
+  // app.use(‘/’,router);
 
+//   router.get(‘/’,function(req, res){
+//   res.sendFile(path + ‘index.html’);
+// });
+//
+// app.use(‘*’,function(req, res){
+//   res.send(‘Error 404: Not Found!’);
+// });
 // var logger = function(req, res, next){
 //   console.log('logging...');
 //   next();
