@@ -5,3 +5,6 @@ Don't know what to eat? No dietary restrictions? Use our app! Randomly generated
 Made with love by Ashley, Stephanie, and Lian
 
 #grubhub #eat24 #yelp #sponsorsplease
+
+
+screenshot of final page in public/images
