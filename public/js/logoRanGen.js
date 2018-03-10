@@ -1,4 +1,5 @@
 ///meal-engine/static/logoRanGen.js
+
 var imagesArray = ["Butter Cookies", "Spinach Artichoke Dip", "Chicken Soup"];
 
 function displayImage(){
@@ -8,3 +9,5 @@ function displayImage(){
     document.getElementById('test').innerHTML = imagesArray[num];
 
 }
+
+// console.log("Hello");
