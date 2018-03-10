@@ -1,0 +1,19 @@
+body{
+  background-image: url(http://blog.retreat.guru/wp-content/uploads/2015/11/Dollarphotoclub_70594694-1200x700.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+}
+
+.container{
+  font-family: 'Cinzel', serif;
+  border-radius: 20px;
+  
+   background-color: #ffffff;
+   border: 1px solid black;
+   opacity: 0.6;
+   filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+/* div.topBox{
+
+} */
