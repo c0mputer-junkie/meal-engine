@@ -2,61 +2,44 @@
 <body>
 
 <!-- Nav Bar -->
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#" onclick = "displayImage()">Meal-Engine</a>
+    </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Team <span  class="caret"></span></a>
+          <ul class="dropdown-menu">
+          <li><a href="https://avatars0.githubusercontent.com/u/16566442?s=460&v=4">Ashley</a></li>
+          <li><a href="https://avatars0.githubusercontent.com/u/22802127?s=460&v=4">Stephanie</a></li>
+          <li><a href="https://avatars0.githubusercontent.com/u/16006190?s=460&v=4">Lian</a></li>
+        </ul>
+            </li>
+          </ul>
+       </li>
+     </ul>
+   </div>
+ </nav>
+
   <div class="container">
 
-    <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#" onclick = "displayImage()">Meal-Engine</a>
-        </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Team <span  class="caret"></span></a>
-              <ul class="dropdown-menu">
-              <li><a href="https://avatars0.githubusercontent.com/u/16566442?s=460&v=4">Ashley</a></li>
-              <li><a href="https://avatars0.githubusercontent.com/u/22802127?s=460&v=4">Stephanie</a></li>
-              <li><a href="https://avatars0.githubusercontent.com/u/16006190?s=460&v=4">Lian</a></li>
-            </ul>
-                </li>
-              </ul>
-           </li>
-         </ul>
-       </div>
-     </nav>
-  </div>
-
-    <div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-9">
-            <h1>What should you eat today?</h1>
-              <div id="test"><p>skdjkfjsd</p></div>
-              
-          </div>
-      </nav>
-
-
-    <div class="row topBox">
-      <div class="col-xs-6 col-md-4">
-
-    <!-- add to its own button class  -->
-
-    <div class="Recipe-Image-Button-Wrapper">
+  <div class="row topBox">
+    <div class="col-xs-6 col-md-4">
+    <!-- Random Button  -->
       <span name="imageForm">
-
-        <img src="https://emojipedia-us.s3.amazonaws.com/thumbs/160/facebook/65/fork-and-knife_1f374.png" onclick = "displayImage()" width= "50" value="Display Random Image" > </img>
-
-
-      </div>
-
-      <div class="col-xs-12 col-sm-6 col-md-8">
-        <h1>What should you eat today?</h1>
-          <div id="test"> </div>
-      </div>
+        <img src="https://emojipedia-us.s3.amazonaws.com/thumbs/160/facebook/65/fork-and-knife_1f374.png" onclick = "displayImage()" width= "50" value="Display Random Image"></span>
     </div>
 
+    <div class="col-xs-12 col-sm-6 col-md-8">
+      <h1>What should you eat today?</h1>
+        <div id="test"> </div>
+
+    </div>
+  </div>
+
   <div class="row bottomBox">
-      <div class="col-xs-12 col-md-6 col-lg-6">
+    <div class="col-xs-12 col-md-6 col-lg-6">
       <h1>Add Recipe</h1>
       <% if(errors){  %>
       <ul>
@@ -76,13 +59,14 @@
       </form>
     </div>
     <div class="col-xs-12 col-md-6 col-lg-6">
-      <h1><%= title %></h1>
-      <ul>
-      <% users.forEach(function(user){ %>
-        <li><%= user.recipe_name %>  - <a href=" <%= user.link_name %> " class="deleteUser" data-id=<%=user._id%>>Go to Recipe</a></li>
-      <% }) %>
-      </ul>
+          <h1><%= title %></h1>
+          <ul>
+          <% users.forEach(function(user){ %>
+            <li><%= user.recipe_name %>  - <a href=" <%= user.link_name %> " class="deleteUser" data-id=<%=user._id%>>Go to Recipe</a></li>
+          <% }) %>
+          </ul>
     </div>
   </div>
-  </div>
+
+</div>
 <% include partials/footer %>
