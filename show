@@ -1,0 +1,10 @@
+MongoDB shell version v3.6.3
+connecting to: mongodb://127.0.0.1:27017/dbs
+MongoDB server version: 3.6.3
+Server has startup warnings: 
+2018-03-04T21:38:17.246-0800 I CONTROL  [initandlisten] 
+2018-03-04T21:38:17.248-0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-03-04T21:38:17.249-0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-03-04T21:38:17.249-0800 I CONTROL  [initandlisten] 
+> uuseuse[3G[Juuseuse[10G^C
+bye
