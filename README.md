@@ -2,8 +2,8 @@
 
 Don't know what to eat? No dietary restrictions? Use our app! Randomly generated recipes including snacks, appetizers, desserts, and meals.
 
-## In order to use you must have 
-NPM Installed, Brew, and compatable browser, preferable Chrome
+## In order to use you must have the following
+NPM Installed, Brew, mongodb, and compatable browse(Pefered Chrome)
 
 ## How to download and use
 
