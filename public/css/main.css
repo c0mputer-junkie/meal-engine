@@ -3,17 +3,13 @@ body{
   background-repeat:no-repeat;
   background-size: cover;
   padding-top: 100px;
+  background-color: black;
 }
-
 .container{
   font-family: 'Cinzel', serif;
   border-radius: 20px;
-  
-   background-color: #ffffff;
-   border: 1px solid black;
-   opacity: 0.6;
-   filter: alpha(opacity=60); /* For IE8 and earlier */
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
 }
-/* div.topBox{
-
-} */
