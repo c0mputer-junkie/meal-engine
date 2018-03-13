@@ -11,7 +11,7 @@ NPM Installed, Brew, mongodb, and compatable browse(Pefered Chrome)
 Fork and download files.
 
 ### Step 2
-Get server up and running by running nodemon command
+Get server up and running by running `nodemon` command
 
 ### Step 3
 
