@@ -26,11 +26,11 @@ Enter meals you are debating on eating
 Use spoon and for button to generate random dish for the day and get to cooking!
 
 
-## Made with love by Ashley, Stephanie, and Lian
+**Made with love by Ashley, Stephanie, and Lian**
 
 ![screen shot 2018-03-09 at 5 52 30 pm](https://user-images.githubusercontent.com/22802127/37322016-76c9b2b0-2638-11e8-895c-336ca31cee13.png)
 
 
-#grubhub #eat24 #yelp #sponsorsplease
+#grubhub #eat24 #yelp **sponsorsplease**
 
 
