@@ -11,17 +11,20 @@ NPM Installed, Brew, mongodb, and compatable browse(Pefered Chrome)
 Fork and download files.
 
 ### Step 2
-Get server up and running by running `nodemon` command
+Run `npm install`
 
 ### Step 3
-
-Got to <u>localhost:3000</u>
+Get server up and running by running `nodemon` command
 
 ### Step 4
 
-Enter meals you are debating on eating 
+Got to <u>localhost:3000</u>
 
 ### Step 5
+
+Enter meals you are debating on eating 
+
+### Step 6
 
 Use spoon and for button to generate random dish for the day and get to cooking!
 
